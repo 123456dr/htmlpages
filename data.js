@@ -1,7 +1,7 @@
-const cleanedData = `t=33 h=65 
+const cleanedData = `t=77 h=65 
     t=23 h=43 t=34 h=55 
     t=24 h=64 t=52 
-    h=24`;
+    h=84`;
     const  myData= cleanedData.replace(/\n/g, ''); // 移除所有換行符
     
 
