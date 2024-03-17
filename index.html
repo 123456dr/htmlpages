@@ -23,12 +23,17 @@
           <div class="col-xs-12">
             <!--網站標題-->
             <h1 class="text-center">作品網站</h1>
-            <h5 class="text-center"><?php echo date("Y/m/d H:i:s"); ?>  </h5>
+            <h5 class="text-center">
+                <p id="datetime"></p>
+                    <script>
+                        document.getElementById('datetime').textContent = new Date().toLocaleString();
+                    </script>
+            </h5>
 
             <!-- 選單 -->
             <ul class="nav nav-pills">
-              <li role="presentation" class="active"><a href="index.php">首頁</a></li>
-              <li role="presentation"><a href="article_list.php">所有文章</a></li>
+              <li role="presentation" class="active"><a href="index.html">首頁</a></li>
+              <li role="presentation"><a href=" ">所有文章</a></li>
               </ul>
           </div>
         </div>
@@ -36,19 +41,19 @@
     </div>
 
 
-    <?php// echo date("Y/m/d H:i:s"); ?>    
     
     
+    
 
 
-    <h3 class="text-center">初始溫度: <?php echo '33'?> </h3>
-    <h3 class="text-center">初始濕度: <?php echo '3'?> </h3>
-    <h3 class="text-center">最終溫度: <?php echo '3'?> </h3>
-    <h3 class="text-center">最終溫度: <?php echo '3'?> </h3>
-    <h3 class="text-center">溫度變化量: <?php echo '3'?> </h3>
-    <h3 class="text-center">濕度變化量: <?php echo '3'?> </h3>
+    <h3 class="text-center">初始溫度: 33 </h3>
+    <h3 class="text-center">初始濕度:  3 </h3>
+    <h3 class="text-center">最終溫度:  3</h3>
+    <h3 class="text-center">最終溫度:  3</h3>
+    <h3 class="text-center">溫度變化量: 3 </h3>
+    <h3 class="text-center">濕度變化量: 3 </h3>
 
-    <?php echo "<hr>"; ?>
+    <hr>
 
 
 
