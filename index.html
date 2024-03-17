@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <title>溫溼度感測</title>
+    <title>溫溼度感測</title> <br> <br>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,6 +19,18 @@
         h1.text-center {
             text-align: center;
             font-family: "標楷體", sans-serif; /* 設置為標楷體字型 */
+        }
+    </style>
+
+    <style>
+        /* 添加版權樣式 */
+        .footer {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
   </head>
@@ -111,12 +123,12 @@
         const temperatureChangeOutput = document.getElementById('temperatureChangeOutput');
         const humidityChangeOutput = document.getElementById('humidityChangeOutput');
 
-        temperatureOutput.textContent = `第一個溫度值：${firstTemp}`;
-        humidityOutput.textContent = `第一個濕度值：${firstHumid}`;
-        lastTemperatureOutput.textContent = `最後一個溫度值：${lastTemp}`;
-        lastHumidityOutput.textContent = `最後一個濕度值：${lastHumid}`;
-        temperatureChangeOutput.textContent = `溫度變化量：${tempChange}`;
-        humidityChangeOutput.textContent = `濕度變化量：${humidChange}`;
+        temperatureOutput.textContent = `初始濕度：${firstTemp}`;
+        humidityOutput.textContent = `初始溫度：${firstHumid}`;
+        lastTemperatureOutput.textContent = `最終濕度：${lastTemp}`;
+        lastHumidityOutput.textContent = `最後溫度：${lastHumid}`;
+        temperatureChangeOutput.textContent = `濕度變化量：${tempChange}`;
+        humidityChangeOutput.textContent = `溫度變化量：${humidChange}`;
     </script>
 
     <style>
@@ -130,6 +142,12 @@
             margin: 5px;
         }
     </style>
+
+    <footer class="footer">
+        <p>&copy; 2024/3/18初稿 RCcc. orz.</p>
+    </footer>
+
+
    </body>
 </html>
 
