@@ -104,12 +104,15 @@
         document.getElementById("output").innerHTML = outputHTML;
         </script>
 <div id="infoContainer">
-        <h3 id="temperatureOutput"></h3>
+        
         <h3 id="humidityOutput"></h3>
-        <h3 id="lastTemperatureOutput"></h3>
         <h3 id="lastHumidityOutput"></h3>
-        <h3 id="temperatureChangeOutput"></h3>
         <h3 id="humidityChangeOutput"></h3>
+        <hr>
+        <h3 id="temperatureOutput"></h3>
+        <h3 id="lastTemperatureOutput"></h3>
+        <h3 id="temperatureChangeOutput"></h3>
+        
     </div>
 
     <script>
@@ -126,7 +129,6 @@
         temperatureOutput.textContent = `初始濕度：${firstTemp}`;
         lastTemperatureOutput.textContent = `最終濕度：${lastTemp}`;
         temperatureChangeOutput.textContent = `濕度變化量：${tempChange}`;
-        <hr>
         humidityOutput.textContent = `初始溫度：${firstHumid}`;
         lastHumidityOutput.textContent = `最後溫度：${lastHumid}`;
         humidityChangeOutput.textContent = `溫度變化量：${humidChange}`;
