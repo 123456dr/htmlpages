@@ -124,18 +124,19 @@
         const humidityChangeOutput = document.getElementById('humidityChangeOutput');
 
         temperatureOutput.textContent = `初始濕度：${firstTemp}`;
-        humidityOutput.textContent = `初始溫度：${firstHumid}`;
         lastTemperatureOutput.textContent = `最終濕度：${lastTemp}`;
-        lastHumidityOutput.textContent = `最後溫度：${lastHumid}`;
         temperatureChangeOutput.textContent = `濕度變化量：${tempChange}`;
+        <hr>
+        humidityOutput.textContent = `初始溫度：${firstHumid}`;
+        lastHumidityOutput.textContent = `最後溫度：${lastHumid}`;
         humidityChangeOutput.textContent = `溫度變化量：${humidChange}`;
     </script>
 
     <style>
         #infoContainer {
-            /*display: flex;
+            /*display: flex;*/
             flex-direction: column;
-            */
+            
             align-items: center;
         }
 
